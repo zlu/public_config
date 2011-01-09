@@ -11,4 +11,3 @@
 	co = checkout
 	d = diff -b
 	s = status
-	a = add
