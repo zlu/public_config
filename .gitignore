@@ -1,0 +1,14 @@
+\#*
+*~
+
+.idea
+.project
+
+tmp
+
+.rspec
+.bundle
+
+log
+db/test.sqlite3
+db/*.sqlite3
