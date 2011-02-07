@@ -6,8 +6,13 @@
 	branch = auto
 	status = auto
 [alias]
-	b = branch
-	c = commit
+	a  = add
+	b  = branch
+	ba = branch -a 
+	ci =  commit -v
+	d  = diff -b
 	co = checkout
-	d = diff -b
-	s = status
+	s  = status
+
+[apply]
+	whitespace = nowarn
