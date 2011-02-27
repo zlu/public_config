@@ -1,5 +1,5 @@
 ;; loading ruby-mode
-(add-to-list 'load-path "/Users/zlu/.rvm/src/ruby-1.9.2-p0/misc")
+(add-to-list 'load-path "/Users/zlu/.rvm/src/ruby-1.9.2-p180/misc")
 
 (autoload 'ruby-mode "ruby-mode" "Major mode for ruby files" t)
 (add-to-list 'auto-mode-alist '("\\.rb$" . ruby-mode))
