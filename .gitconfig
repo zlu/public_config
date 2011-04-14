@@ -1,13 +1,13 @@
 [user]
 	name = zhao lu
 	email = zlu@me.com
-
+[core]
+	editor = emacs
+	excludesfile = /Users/zlu/.gitignore_global
 [color]
-	excludesfile = ~/.gitignore
 	diff = auto
 	branch = auto
 	status = auto
-
 [alias]
 	a  = add
 	b  = branch
@@ -19,5 +19,3 @@
 
 [apply]
 	whitespace = nowarn
-
-
