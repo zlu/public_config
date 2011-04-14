@@ -1,6 +1,7 @@
 # Emacs backup and recover #
 ############################
 *~
+\#*
 
 # IntelliJ and RubyMine #
 #########################
@@ -14,10 +15,15 @@
 # Logs #
 ########
 *.log
+log
+
+# Temp dir and files #
+######################
+tmp
 
 # Rails #
 #########
-log
+
 
 # Mac OS Generated #
 ####################
