@@ -24,6 +24,13 @@ alias cdwiki="cd ~/projects/me/instiki"
 alias cdov="cd ~/projects/ov/openvoice"
 alias cddf="cd ~/projects/ov/dogfood"
 alias cdwdm="cd ~/projects/facebookstuff/whodeletedme"
+alias cdlab="cd ~/projects/thelab"
+alias cdcf="cd ~/projects/thelab/connfu"
+alias cdcfa="cd ~/projects/thelab/connfu/addon"
+alias tailprism="tail -f /Applications/prism/logs/sipmethod.log"
+
+#git alias
+alias gp="git push"
 
 #heroku alias
 alias hl="heroku logs"
