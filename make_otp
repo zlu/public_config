@@ -1,11 +1,13 @@
 #!/bin/bash
 
-if [ -z $1 ]
-  then echo "Please supply an application name."
+if [ $# -ne 3 ]
+  then echo "Usage: make_release application_name application_module supervisor_module."
   exit
 fi
 
 APPLICATION=$1
+APP=$2
+SUP=$3
 
 echo "Creating application " $APPLICATION
 
@@ -18,9 +20,11 @@ echo "{application," $APPLICATION",
  [{description, \"\"},
   {vsn, \"0.1.0\"},
   {module, [
+            "$APP",
+            "$SUP"
            ]},
-  {registered, []},
+  {registered, ["$SUP"]},
   {applications, [kernel, stdlib]},
-  {mod, {, []}}" > $1.app
+  {mod, {"$APP", []}}" > $1.app
  
 echo "Finished creating application " $APPLICATION
