@@ -1,12 +1,14 @@
-# Emacs backup and recover #
+# backup and recover #
 ############################
 *~
 \#*
 
+# Erland #
+*.beam
+
 # IntelliJ and RubyMine #
 #########################
 .idea
-.iml
 
 # Database #
 ############
@@ -25,7 +27,10 @@ tmp
 # Rails #
 #########
 
-
 # Mac OS Generated #
 ####################
 .DS_Store
+
+# Private configuration files #
+####################
+.github_config
