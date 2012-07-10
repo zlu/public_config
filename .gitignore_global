@@ -1,0 +1,31 @@
+# Emacs backup and recover #
+############################
+*~
+\#*
+
+# IntelliJ and RubyMine #
+#########################
+.idea
+.iml
+
+# Database #
+############
+*.sqlite
+*.sql
+
+# Logs #
+########
+*.log
+log
+
+# Temp dir and files #
+######################
+tmp
+
+# Rails #
+#########
+
+
+# Mac OS Generated #
+####################
+.DS_Store
