@@ -28,7 +28,7 @@ echo "{application," $APPLICATION",
  
 echo "-module("$APP").
 
--behavior(application).
+-behaviour(application).
 
 -export([start/2, stop/1]).
 
@@ -40,7 +40,7 @@ stop(_State) ->
 
 echo "-module("$SUP").
 
--behavior(supervisor).
+-behaviour(supervisor).
 
 -export([start_link/0]).
 
