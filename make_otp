@@ -9,6 +9,18 @@ APPLICATION=$1
 
 echo "Creating application " $APPLICATION
 
-mkdir $APPLICATION && cd $APPLICATION && mkdir doc ebin include priv src
-
+mkdir $APPLICATION
+cd $APPLICATION
+mkdir doc ebin include priv src
+cd ebin
+touch $1.app
+echo "{application," $APPLICATION",
+ [{description, \"\"},
+  {vsn, \"0.1.0\"},
+  {module, [
+           ]},
+  {registered, []},
+  {applications, [kernel, stdlib]},
+  {mod, {, []}}" > $1.app
+ 
 echo "Finished creating application " $APPLICATION
