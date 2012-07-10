@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ -z $1 ]
+  then echo "Please supply an application name."
+  exit
+fi
+
+APPLICATION=$1
+
+echo "Creating application " $APPLICATION
+
+mkdir $APPLICATION && cd $APPLICATION && mkdir doc ebin include priv src
+
+echo "Finished creating application " $APPLICATION
