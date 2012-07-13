@@ -24,7 +24,8 @@ echo "{application," $APPLICATION",
            ]},
   {registered, ["$SUP"]},
   {applications, [kernel, stdlib]},
-  {mod, {"$APP", []}}" > ebin/$APPLICATION.app
+  {mod, {"$APP", []}}
+]}." > ebin/$APPLICATION.app
  
 echo "-module("$APP").
 
