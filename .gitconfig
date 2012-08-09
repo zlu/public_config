@@ -2,12 +2,13 @@
 	path = $HOME/.github_config
 
 [tokenuser]
-	name = zhao lu
+	name = Zhao Lu
 	email = zlu@me.com
 [core]
 	editor = emacs
 	excludesfile = /Users/zlu/.gitignore_global
 	url=git@github.com:zlu
+
 [color]
 	diff = auto
 	branch = auto
@@ -28,20 +29,15 @@
        authors = Larry Kang
        authors = Zhao Lu
        authors = Diana Chow
-       authors = Sam Decesare
-       authors = Gregg Caines
-       authors = Skip McBride
-       authors = Seth Edwards
-       authors = Greg Swallow
        authors = Jonathan Freedman
-       authors = Chris Richards
-       email = dev@cotweet.com
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
+
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+
 [user]
 	email = zlu@me.com
