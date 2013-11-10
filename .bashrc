@@ -5,13 +5,13 @@ export TERM='xterm-color'
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
-#instiki runs in production mode unless specified otherwise
-# export RAILS_ENV=development
+source ~/.git-completion.sh
+GIT_PS1_SHOWDIRTYSTATE=true
 
-#openvoice2 required variables
-export DIAL_TO=zlu@iptel.org,openvoice@iptel.org
+PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
 
-#openvoice2 aliases
+export byobu_prefix=`brew --prefix`
+
 alias ov_start="RAILS_ENV=development foreman start"
 alias rov_start="CONNFU_JABBER_URI=jid://usera:1@173.255.241.49 RAILS_ENV=development foreman start"
 
@@ -41,6 +41,9 @@ alias tailprism="tail -f /Applications/prism/logs/sipmethod.log"
 #git aliases
 alias gp="git pull --rebase"
 alias gpp="git pull --rebase && git push"
+alias gs="git stash"
+alias gsp="git stash pop"
+alias gl="git log"
 
 #heroku aliases
 alias hr="heroku restart"

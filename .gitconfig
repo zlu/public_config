@@ -1,13 +1,22 @@
 [user]
-	name = zhao lu
+	name = Zhao Lu
+	email = zlu@me.com
+[include]
+	path = $HOME/.github_config
+
+[tokenuser]
+	name = Zhao Lu
 	email = zlu@me.com
 [core]
 	editor = emacs
 	excludesfile = /Users/zlu/.gitignore_global
+	url=git@github.com:zlu
+
 [color]
 	diff = auto
 	branch = auto
 	status = auto
+
 [alias]
 	a  = add
 	b  = branch
@@ -19,3 +28,11 @@
 
 [apply]
 	whitespace = nowarn
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

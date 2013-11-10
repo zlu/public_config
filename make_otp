@@ -1,0 +1,56 @@
+#!/bin/bash
+
+if [ $# -ne 3 ]
+  then echo "Usage: make_release application_name application_module supervisor_module."
+  exit
+fi
+
+APPLICATION=$1
+APP=$2
+SUP=$3
+
+echo "Creating application " $APPLICATION
+
+mkdir $APPLICATION
+cd $APPLICATION
+mkdir doc ebin include priv src
+
+echo "{application," $APPLICATION",
+ [{description, \"\"},
+  {vsn, \"0.1.0\"},
+  {module, [
+            "$APP",
+            "$SUP"
+           ]},
+  {registered, ["$SUP"]},
+  {applications, [kernel, stdlib]},
+  {mod, {"$APP", []}}
+]}." > ebin/$APPLICATION.app
+ 
+echo "-module("$APP").
+
+-behaviour(application).
+
+-export([start/2, stop/1]).
+
+start(_Type, _Args) ->
+    ok.
+
+stop(_State) ->
+    ok." > src/$APP.erl
+
+echo "-module("$SUP").
+
+-behaviour(supervisor).
+
+-export([start_link/0]).
+
+-export([init/1]).
+
+start_link() ->
+  .
+
+init([]) ->
+  ." > src/$SUP.erl
+
+echo "Finished creating application " $APPLICATION
