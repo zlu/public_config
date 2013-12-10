@@ -1,4 +1,5 @@
-# Emacs backup and recover #
+# backup and recover #
+############################
 *~
 \#*
 
@@ -25,12 +26,16 @@ tmp
 
 # Rails #
 #########
+.rvmrc
 
 # Mac OS Generated #
 ####################
-.DS_Store?
+.DS_Store
 
 # Private configuration files #
 ####################
 .github_config
 
+# Zeus #
+custom_plan.rb
+zeus.json
