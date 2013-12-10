@@ -12,38 +12,13 @@ PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[
 
 export byobu_prefix=`brew --prefix`
 
-alias ov_start="RAILS_ENV=development foreman start"
-alias rov_start="CONNFU_JABBER_URI=jid://usera:1@173.255.241.49 RAILS_ENV=development foreman start"
-
-#openvoice required variables
-export TROPO_APP=98754
-export TROPO_USER=zlu
-export TROPO_PASS=flute
-
-#dogfood required variabls - temp rewrite openvoice
-export TROPO_APP=139325
-export TROPO_USER=thelab
-export TROPO_PASS=standard99
-
-alias tunnelr_start="rake tunnel:tunnel:start"
-alias cdconf="cd ~/projects/configurations"
-alias cdwiki="cd ~/projects/me/instiki"
-alias cdov="cd ~/projects/ov/openvoice"
-alias cdov2="cd ~/projects/thelab/openvoice2"
-alias cddf="cd ~/projects/ov/dogfood"
-alias cdwdm="cd ~/projects/facebookstuff/whodeletedme"
-alias cdlab="cd ~/projects/thelab"
-alias cdplay="cd ~/projects/thelab/play"
-alias cdcf="cd ~/projects/thelab/connfu"
-alias cdcfa="cd ~/projects/thelab/connfu/addon"
-alias tailprism="tail -f /Applications/prism/logs/sipmethod.log"
-
 #git aliases
 alias gp="git pull --rebase"
 alias gpp="git pull --rebase && git push"
 alias gs="git stash"
 alias gsp="git stash pop"
 alias gl="git log"
+alias gd="git diff"
 
 #heroku aliases
 alias hr="heroku restart"
