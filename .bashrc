@@ -28,6 +28,8 @@ alias hlt="heroku logs --tail"
 #bundler aliases
 alias bi="bundle install"
 alias be="bundle exec"
+alias bu="bundle update"
+alias bus="bundle update --source"
 
 #general shell aliases
 alias ll="ls -l"

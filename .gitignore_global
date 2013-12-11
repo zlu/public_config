@@ -36,6 +36,6 @@ tmp
 ####################
 .github_config
 
-# Zeus #
-custom_plan.rb
-zeus.json
+# Foreman
+####################
+.env
