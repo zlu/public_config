@@ -1,16 +1,25 @@
-export PATH=/usr/local/src/webmachine/scripts:~/bin:/usr/local/src/scala-2.8.1.final/bin:~/.cabal/bin:/usr/local/bin:/usr/local/sbin:/usr/local/src/android-sdk-mac_x86/tools:/usr/local/src/android-sdk-mac_x86/platform-tools:/local/src/go/bin:$PATH
-
 #give color to ls
 export TERM='xterm-color'
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
-source ~/.git-completion.sh
+if [ -f ~/.git-prompt.sh ];
+then
+  source ~/.git-prompt.sh
+else
+  cp `locate git-prompt.sh` ~/.git-prompt.sh && source ~/.git-prompt.sh
+fi
+
+if [ -f ~/.git-completion.sh ];
+then
+  source ~/.git-completion.sh
+else
+  cp `locate git-completion.bash` ~/.git-completion.sh && source ~/.git-completion.sh
+fi
+
 GIT_PS1_SHOWDIRTYSTATE=true
 
 PS1='\[\033[32m\]\u@\h\[\033[00m\]:\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
-
-export byobu_prefix=`brew --prefix`
 
 #git aliases
 alias gp="git pull --rebase"
@@ -38,4 +47,7 @@ alias grep="grep --color"
 
 set -o emacs
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
