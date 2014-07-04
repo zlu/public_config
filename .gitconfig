@@ -9,7 +9,7 @@
 	email = zlu@me.com
 [core]
 	editor = emacs
-	excludesfile = /Users/zlu/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	url=git@github.com:zlu
 
 [color]
