@@ -17,6 +17,7 @@ set hls
 set ruler
 set wildmenu
 set smarttab
+set incsearch
 
 au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 
