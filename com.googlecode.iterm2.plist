@@ -112,7 +112,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>668 37 637 373 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>22 232 924 485 0 0 1440 900 </string>
+	<string>422 329 924 485 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 4 712 873 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -1593,6 +1593,10 @@
 			<string>/Users/zlu</string>
 		</dict>
 	</array>
+	<key>NoSyncTimeOfLastPromo</key>
+	<real>455519055.405505</real>
+	<key>NoSyncTimeOfLastPromoDownload</key>
+	<real>460397368.16771001</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1601,6 +1605,8 @@
 	<false/>
 	<key>OpenTmuxWindowsIn</key>
 	<integer>0</integer>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
 	<key>PassOnControlClick</key>
 	<false/>
 	<key>PasteFromClipboard</key>
@@ -1657,7 +1663,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-05-12T07:22:13Z</date>
+	<date>2015-08-04T16:08:39Z</date>
 	<key>SavePasteHistory</key>
 	<true/>
 	<key>Show Toolbelt</key>
@@ -1709,6 +1715,6 @@
 	<key>findRegex_iTerm</key>
 	<true/>
 	<key>iTerm Version</key>
-	<string>2.1</string>
+	<string>2.1.1</string>
 </dict>
 </plist>
