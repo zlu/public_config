@@ -3,8 +3,14 @@
 *~
 \#*
 
-# Erland #
+# Erlang #
 *.beam
+
+# vim #
+#
+## vim #
+########
+.swp
 
 # IntelliJ and RubyMine #
 #########################
