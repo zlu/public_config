@@ -55,29 +55,30 @@ noremap <silent> ,cc :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<C
 noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
 
 " NERDTress File highlighting
-"function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
-"   exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
-"	 exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
-"endfunction
-"
-"	" Programming Languages
-"  call NERDTreeHighlightFile('rb', 'green', 'none', 'green', '#151515')
-"  call NERDTreeHighlightFile('py', 'yellow', 'none', 'yellow', '#151515')
-"  call NERDTreeHighlightFile('php', 'magenta', 'none', '#ff00ff', '#151515')
-"  call NERDTreeHighlightFile('js', 'red', 'none', '#ffa500', '#151515')
-"  call NERDTreeHighlightFile('go', 'red', 'none', '#ffa500', '#151515')
-"  
-"  " Authoring
-"  call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
-"
-"  " Configuration Files
-"  call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
-"  call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
-"  call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
-"
-"  " Web
-"  call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
-"  call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
+function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
+   exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
+	 exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+endfunction
+
+" Programming Languages
+call NERDTreeHighlightFile('ex', 'green', 'none', 'green', '#151515')
+call NERDTreeHighlightFile('rb', 'green', 'none', 'green', '#151515')
+call NERDTreeHighlightFile('py', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('php', 'magenta', 'none', '#ff00ff', '#151515')
+call NERDTreeHighlightFile('js', 'red', 'none', '#ffa500', '#151515')
+call NERDTreeHighlightFile('go', 'red', 'none', '#ffa500', '#151515')
+  
+" Authoring
+call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
+
+" Configuration Files
+call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
+
+" Web
+call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
 
 execute pathogen#infect()
 
