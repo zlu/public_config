@@ -11,10 +11,16 @@ set smtp_pass = $imap_pass
 
 set folder = "imaps://$my_fastmail:992"
 set spoolfile = "="
+set charset = "us-ascii:utf-8"
+set mailcap_path = ~/.mutt/mailcap
+auto_view text/html
 
 # Pager configurations
 set pager_index_lines = 20
 unset markers
+
+# Headers
+set edit_headers = yes
 
 # Keybindings
 
