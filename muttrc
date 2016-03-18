@@ -16,6 +16,15 @@ set spoolfile = "="
 set pager_index_lines = 20
 unset markers
 
+# Keybindings
+
+bind index g first-entry
+bind index G last-entry
+
+bind pager g top
+bind pager G bottom
+
+# Theme
 color normal black default 
 color hdrdefault cyan default 
 color indicator black cyan
