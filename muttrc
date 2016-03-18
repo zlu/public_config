@@ -23,7 +23,6 @@ unset markers
 set edit_headers = yes
 
 # Keybindings
-
 bind index g first-entry
 bind index G last-entry
 
@@ -36,3 +35,5 @@ color hdrdefault cyan default
 color indicator black cyan
 color status green black
 color header magenta default ^Subject:
+color quoted blue default
+color body blue default "(http|https).*"
