@@ -38,4 +38,5 @@ color indicator black cyan
 color status green black
 color header magenta default ^Subject:
 color quoted blue default
+color quoted1 green default
 color body blue default "(http|https).*"
