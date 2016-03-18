@@ -11,7 +11,10 @@ set smtp_pass = $imap_pass
 
 set folder = "imaps://$my_fastmail:992"
 set spoolfile = "="
+
+# Pager configurations
 set pager_index_lines = 20
+unset markers
 
 color normal black default 
 color hdrdefault cyan default 
