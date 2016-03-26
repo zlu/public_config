@@ -32,6 +32,9 @@ bind index <tab> sync-mailbox
 bind pager g top
 bind pager G bottom
 
+set query_command = "contacts -Sf '%eTOKEN%n' '%s' | sed -e 's/TOKEN/\t/g'"
+bind editor <Tab> complete-query
+bind editor ^T    complete
 
 # Theme
 color normal black default 
