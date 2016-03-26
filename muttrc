@@ -15,7 +15,6 @@ folder-hook z@zlu.me/ 'source ~/.mutt/zlu.me'
 set charset = "us-ascii:utf-8"
 set send_charset = "us-ascii:utf-8"
 set mailcap_path = ~/.mutt/mailcap
-alternative_order text/plain text/html
 auto_view text/html
 
 # Pager configurations
@@ -46,3 +45,4 @@ color header magenta default ^Subject:
 color quoted blue default
 color quoted1 green default
 color body blue default "(http|https).*"
+color prompt blue default
