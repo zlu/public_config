@@ -1,16 +1,11 @@
-set mbox_type=Maildir
-set from = "z@zlu.me"
-set realname = "zlu"
+set mbox_type = Maildir
 
-set my_fastmail = mail.messagingengine.com
-set imap_user = zlu@fastmail.com
-set imap_pass = `security find-generic-password -g -a z@zlu.me 2>&1 | awk '/^password: \"(.*)\"/{print $2}'`
+source "~/.mutt/easytaxi"
+folder-hook $folder 'source ~/.mutt/easytaxi'
 
-set smtp_url = "smtp://$imap_user:$imap_pass@$my_fastmail:587"
-set smtp_pass = $imap_pass
+source "~/.mutt/zlu.me"
+folder-hook z@zlu.me/ 'source ~/.mutt/zlu.me'
 
-set folder = "imaps://$my_fastmail:992"
-set spoolfile = "="
 set charset = "us-ascii:utf-8"
 set send_charset = "us-ascii:utf-8"
 set mailcap_path = ~/.mutt/mailcap

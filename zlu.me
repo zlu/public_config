@@ -1,0 +1,13 @@
+set folder = ~/Maildir
+set my_fastmail = mail.messagingengine.com
+set from = "z@zlu.me"
+set realname = "zlu"
+set imap_user = zlu@fastmail.com
+set imap_pass = `security find-generic-password -g -a z@zlu.me 2>&1 | awk '/^password: \"(.*)\"/{print $2}'`
+
+set smtp_url = "smtp://$imap_user:$imap_pass@$my_fastmail:587"
+set smtp_pass = $imap_pass
+
+set folder = "imaps://$my_fastmail:992"
+set spoolfile = "+INBOX"
+set postponed = "+Drafts"
