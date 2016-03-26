@@ -4,6 +4,7 @@ set message_cachedir = ~/.mutt/cache/bodies
 set fast_reply = yes
 set include = yes
 set arrow_cursor
+set editor = "vim +8"
 
 source "~/.mutt/easytaxi"
 folder-hook $folder 'source ~/.mutt/easytaxi'
