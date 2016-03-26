@@ -26,9 +26,12 @@ set edit_headers = yes
 # Keybindings
 bind index g first-entry
 bind index G last-entry
+bind index R group-reply
+bind index <tab> sync-mailbox
 
 bind pager g top
 bind pager G bottom
+
 
 # Theme
 color normal black default 
