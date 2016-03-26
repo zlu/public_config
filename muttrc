@@ -1,4 +1,8 @@
 set mbox_type = Maildir
+set header_cache = ~/.mutt/cache/headers
+set message_cachedir = ~/.mutt/cache/bodies
+set fast_reply = yes
+set include = yes
 
 source "~/.mutt/easytaxi"
 folder-hook $folder 'source ~/.mutt/easytaxi'
@@ -30,7 +34,7 @@ bind pager G bottom
 color normal black default 
 color hdrdefault cyan default 
 color indicator black cyan
-color status green black
+color status green brightblack 
 color header magenta default ^Subject:
 color quoted blue default
 color quoted1 green default
